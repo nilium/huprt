@@ -41,7 +41,7 @@ import (
 // the new process cannot be started, the Hupd will return an error and allow the program to decide
 // how to proceed. The Kill method is never called if an error is returned.
 //
-// It is particularly important, durring BeginRestart, to stop handling SIGTERM, as Hupd uses this
+// It is particularly important, during BeginRestart, to stop handling SIGTERM, as Hupd uses this
 // to know when to invoke its Kill method.
 //
 // Essentially, the flow from Hupd.Restart to BeginRestart to Kill behaves roughly like the
