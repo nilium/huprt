@@ -103,7 +103,7 @@ func restartCmd(hupArg string) exec.Cmd {
 	if len(os.Args) > 1 {
 		args = make([]string, len(os.Args)+1)
 		copy(args[2:], os.Args[1:])
-		if args[1] == hupArg {
+		if args[2] == hupArg {
 			args = args[1:]
 		} else {
 			args[1] = hupArg
