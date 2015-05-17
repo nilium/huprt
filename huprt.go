@@ -10,7 +10,7 @@
 // is not expected to work on Windows or non-Unix systems. Future work-arounds for this may reduce
 // the dependence on signals but require other IPC methods. For now, not supporting Windows is
 // acceptable.
-package huprt // import "github.com/nilium/huprt"
+package huprt
 
 import (
 	"os"
